@@ -1,0 +1,230 @@
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--text-3);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 24px;
+  transition: color 0.2s;
+  letter-spacing: 0.03em;
+}
+.back-btn:hover { color: var(--green); }
+
+.goal-detail-header {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  margin-bottom: 32px;
+}
+
+.goal-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.goal-category-big {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.goal-detail-title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.goal-detail-desc {
+  color: var(--text-2);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.goal-detail-stats {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.gd-stat {
+  display: flex;
+  flex-direction: column;
+}
+.gd-stat-num {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--text);
+}
+.gd-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+}
+
+.gd-progress { margin-top: 4px; }
+
+/* Plans */
+.plans-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.plans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.plan-block {
+  padding: 20px;
+}
+
+.plan-block-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.plan-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.plan-desc {
+  font-size: 0.85rem;
+  color: var(--text-3);
+  margin-bottom: 6px;
+}
+
+.plan-meta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.plan-deadline {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-3);
+}
+.plan-deadline.overdue { color: var(--red); }
+
+.plan-count {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-3);
+  background: var(--bg-3);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.plan-block-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.plan-progress-row {
+  margin-bottom: 12px;
+}
+
+/* Actions */
+.actions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.no-actions {
+  font-size: 0.85rem;
+  color: var(--text-3);
+  padding: 12px 0;
+  font-family: var(--font-mono);
+}
+
+.action-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-2);
+  margin-top: 6px;
+  transition: background 0.2s;
+}
+.action-item:hover { background: var(--bg-3); }
+.action-item.completed { border-left: 2px solid var(--green); }
+.action-item.incomplete { border-left: 2px solid var(--red); }
+.action-item.pending { border-left: 2px solid var(--border-light); }
+
+.action-item-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.action-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+.action-dot.completed { background: var(--green); }
+.action-dot.incomplete { background: var(--red); }
+.action-dot.pending { background: var(--border-light); }
+
+.action-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.action-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-3);
+  margin-top: 2px;
+}
+
+.action-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.action-item-right {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+  align-items: flex-start;
+}

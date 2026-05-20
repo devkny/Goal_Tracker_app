@@ -1,0 +1,128 @@
+.journal-filters {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  flex-wrap: wrap;
+}
+
+/* Reuse .filter-tab from Dashboard.css */
+.filter-tab {
+  background: none;
+  border: none;
+  color: var(--text-3);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+.filter-tab:hover { color: var(--text); }
+.filter-tab.active { background: var(--bg-3); color: var(--green); }
+
+.journal-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.journal-month {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.journal-entries {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.journal-entry {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.journal-entry:hover { transform: translateY(-2px); }
+.journal-entry.completed { border-color: var(--green-mid); }
+.journal-entry.incomplete { border-color: rgba(255,77,109,0.2); }
+
+.je-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.je-status-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.je-goal {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.je-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-3);
+  flex-shrink: 0;
+}
+
+.je-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.je-desc {
+  font-size: 0.85rem;
+  color: var(--text-2);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.je-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.je-lesson {
+  font-size: 0.82rem;
+  color: var(--text-3);
+  background: var(--bg-2);
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  line-height: 1.4;
+}
+.je-lesson-label {
+  font-weight: 600;
+  color: var(--amber);
+  margin-right: 6px;
+}

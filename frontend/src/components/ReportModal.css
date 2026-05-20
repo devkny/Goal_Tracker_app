@@ -1,0 +1,29 @@
+.outcome-toggle {
+  display: flex;
+  gap: 10px;
+}
+
+.outcome-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-2);
+  color: var(--text-3);
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.outcome-btn:hover { border-color: var(--border-light); color: var(--text); }
+.outcome-btn.success {
+  background: var(--green-dim);
+  border-color: var(--green);
+  color: var(--green);
+}
+.outcome-btn.fail {
+  background: var(--red-dim);
+  border-color: var(--red);
+  color: var(--red);
+}
